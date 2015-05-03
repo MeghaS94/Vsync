@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:background="@drawable/phone1"
+    tools:context=".TodoActivity"
+    android:id="@+id/fl2">
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/vSync"
+        android:paddingTop="50dp"
+        android:textSize="40sp"
+        android:textColor="#FFFF"/>
+
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="67dp"
+        android:layout_centerHorizontal="true"
+        android:width="200dp"
+        android:height="200dp"
+        android:inputType="text"
+        android:hint="@string/Username"
+        android:layout_below="@+id/txt"
+        android:textColor="#FFFF" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:width="200dp"
+        android:height="200dp"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/editText1"
+        android:textColor="#FFFF" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/LogIn"
+        android:ems = "10"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/SignUp"
+        android:layout_gravity="center_horizontal"
+        android:ems = "10"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/image3">
+
+    <TextView
+        android:id="@+id/txtwelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Welcome"
+        android:paddingTop="50dp"
+        android:textSize="50sp"
+        android:textColor="#FFFF"/>
+
+    <TextView
+        android:id="@+id/txtuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtwelcome"
+        android:textColor="#FFFF"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/LogOut"
+        android:layout_marginTop="78dp"
+        android:layout_below="@+id/SyncRequests"
+        android:layout_alignRight="@+id/txtwelcome"
+        android:layout_alignEnd="@+id/txtwelcome" />
+    <Button
+        android:id="@+id/Contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Contacts"
+
+        android:layout_above="@+id/ViewTT"
+        android:layout_alignLeft="@+id/ViewTT"
+        android:layout_alignStart="@+id/ViewTT" />
+    <Button
+        android:id="@+id/ViewTT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ViewTT"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/txtwelcome"
+        android:layout_alignStart="@+id/txtwelcome" />
+
+    <Button
+        android:id="@+id/SyncRequests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Requests"
+        android:layout_below="@+id/ViewTT"
+        android:layout_alignRight="@+id/Contacts"
+        android:layout_alignEnd="@+id/Contacts" />
+
+    <Button
+        android:id="@+id/new_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Notifications"
+        android:layout_below="@+id/SyncRequests"
+        android:layout_alignRight="@+id/Contacts"
+        android:layout_alignEnd="@+id/Contacts" />
+
+    <Button
+        android:id="@+id/new_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Sync"
+        android:layout_below="@+id/new_button"
+        android:layout_alignRight="@+id/Contacts"
+        android:layout_alignEnd="@+id/Contacts" />
+
+
+</RelativeLayout>
