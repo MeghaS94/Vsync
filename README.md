@@ -1,1 +1,1 @@
-# Vsync
+# Vsync : An android app
